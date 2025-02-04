@@ -12,22 +12,19 @@ import lombok.*;
 @NoArgsConstructor
 @RequiredArgsConstructor // lombok, pour générer un constructeur avec les champs @NonNull
 @ToString
-public class Personne {
+
+public class Participation {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer matricule;
+    private Integer ID;
 
     @NotBlank
     @NonNull // lombok
-    private String nom;
+    private String role;
 
     @NotBlank
     @NonNull // lombok
-    private String prenom;
-
-    @NotBlank
-    @NonNull // lombok
-    private String poste;
+    private Float pourcentage;
 
 }
