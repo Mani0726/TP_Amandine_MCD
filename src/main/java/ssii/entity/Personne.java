@@ -5,6 +5,9 @@ import jakarta.persistence.*;
 import jakarta.validation.constraints.NotBlank;
 import lombok.*;
 
+import java.util.ArrayList;
+import java.util.List;
+
 @Entity
 @Getter
 @Setter
@@ -29,6 +32,7 @@ public class Personne {
     @NonNull // lombok
     private String poste;
 
-    @OneToMany
-    private Participation participation;
+
+    @OneToMany (mappedBy = "personne")
+    private List<Participation> participation = new ArrayList<>();
 }
