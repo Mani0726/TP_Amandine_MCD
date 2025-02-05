@@ -3,7 +3,6 @@ package ssii.entity;
 import jakarta.persistence.*;
 
 import jakarta.validation.constraints.NotBlank;
-import jakarta.validation.constraints.NotEmpty;
 import lombok.*;
 
 @Entity
@@ -29,5 +28,6 @@ public class Personne {
     @NotBlank
     @NonNull // lombok
     private String poste;
+
 
 }

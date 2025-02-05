@@ -25,10 +25,6 @@ public class Projet {
 
     @NotBlank
     @NonNull // lombok
-    private Float pourcentage;
-
-    @NotBlank
-    @NonNull // lombok
     private LocalDate debut;
 
     private java.time.LocalDate fin;
