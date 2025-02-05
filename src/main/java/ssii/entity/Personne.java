@@ -35,4 +35,11 @@ public class Personne {
 
     @OneToMany (mappedBy = "personne")
     private List<Participation> participation = new ArrayList<>();
+
+    @ManyToOne
+    private Personne superieur;
+
+    @OneToMany (mappedBy = "superieur")
+    private List<Personne> subordonnee;
+
 }

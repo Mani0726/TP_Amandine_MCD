@@ -1,8 +1,8 @@
 -- Initialisation des tables
-INSERT INTO PERSONNE(nom, prenom, poste)
-VALUES ('Rémi', 'Bastide', 'enseignant'),
-       ('Elyes', 'Lamine', 'directeur'),
-       ('Jean-Marie', 'Pécatte', 'enseignant');
+INSERT INTO PERSONNE(nom, prenom, poste, superieur_matricule)
+VALUES ('Rémi', 'Bastide', 'enseignant', null),
+       ('Elyes', 'Lamine', 'directeur', 1),
+       ('Jean-Marie', 'Pécatte', 'enseignant',2);
 
 
 INSERT INTO PROJET(nom, debut, fin)
