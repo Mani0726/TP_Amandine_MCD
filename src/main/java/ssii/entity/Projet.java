@@ -4,6 +4,7 @@ import jakarta.persistence.*;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotEmpty;
 import lombok.*;
+
 import java.time.LocalDate;
 
 @Entity
@@ -29,5 +30,8 @@ public class Projet {
 
     private java.time.LocalDate fin;
 
+
+    @OneToMany
+    private Participation participation;
 
 }
